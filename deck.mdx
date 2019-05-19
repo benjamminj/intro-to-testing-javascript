@@ -1,0 +1,212 @@
+import { Head, Appear, Image as FullScreenImage } from 'mdx-deck';
+import Text from './components/Text';
+import Handle from './components/Handle';
+import BigHandle from './components/BigHandle';
+import WithHandle from './layouts/WithHandle';
+import InvertHandle from './layouts/InvertHandle';
+import VisuallyHidden from './layouts/VisuallyHidden';
+import List from './components/List';
+import Image from './components/Image';
+import Heading from './components/Heading';
+import Highlight from './components/Highlight';
+import { colors } from './styles/variables';
+
+export { default as theme } from './theme';
+
+<Head>
+  <title>Components Everyone Can Use</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Fredoka+One|Bowlby+One+SC|Inconsolata|Source+Sans+Pro"
+    rel="stylesheet"
+  />
+</Head>
+
+<h1>
+  <Text font="secondary" size="xxl" weight="bold">
+    Components Everyone Can Use
+  </Text>
+</h1>
+
+<h2>
+  <Text size="lg" font="secondary" weight="normal">
+    Getting started with accessibility in React
+  </Text>
+</h2>
+
+<BigHandle />
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxxl" weight="bold" font="secondary">
+    Accessibility
+  </Text>
+</h2>
+
+<Appear>
+  <h3>
+    <Text size="xl" font="secondary">
+      Making sure your product is{' '}
+      <Highlight textColor={colors.blue[500]}>fully usable</Highlight>
+      <br /> by people with <Highlight textColor={colors.blue[500]}>
+        disabilities
+      </Highlight>
+    </Text>
+  </h3>
+</Appear>
+
+---
+
+export default WithHandle;
+
+<List useAppear>
+  <Text font="secondary" size="xxl">
+    ♿️ Permanent disability
+  </Text>
+  <Text font="secondary" size="xxl">
+    📅 Temporary disability
+  </Text>
+  <Text font="secondary" size="xxl">
+    🍻 Situational disability
+  </Text>
+</List>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxl" align="left">
+  Roughly <Highlight textColor={colors.blue[500]}>1/5</Highlight> of the <Highlight textColor={colors.blue[500]}>US population</Highlight> <br /> has a <Highlight textColor={colors.blue[500]}>permanent</Highlight> disability
+</Heading>
+---
+
+export default WithHandle;
+
+<Heading size="xxl" align="left" padding="0 15vw">
+  Why do we{' '}
+  <Highlight textColor={colors.blue[500]}>
+    skip <br />
+    accessibility
+  </Highlight>{' '}
+  so much? 😱
+</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxl">Reason #1:</Heading>
+<Heading size="xxxl">
+  Accessibility feels like an edge case
+</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxxl">Feel empathy for impaired users</Heading>
+
+---
+
+export default VisuallyHidden;
+
+<Heading size="xxxl">Turn your brightness all the way down</Heading>
+
+---
+
+export default InvertHandle;
+
+<FullScreenImage
+  src="./images/magicmouse.png"
+  alt="magic mouse charging upside down"
+/>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxl">Reason #2:</Heading>
+<Heading size="xxxl">
+  I don't have time!
+</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxxl">Start small</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading>
+  Make{' '}
+  <Highlight textColor={colors.blue[500]} radius="10px">
+    accessible components
+  </Highlight>
+  , and the rest will follow
+</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxl">
+  Encourage best practices <br /> in your{' '}
+  <Highlight textColor={colors.blue[500]}>component APIs</Highlight>
+</Heading>
+
+---
+
+export default WithHandle;
+
+<Heading size="xl">prop-types</Heading>
+
+```jsx
+import React from 'react';
+
+const Image = ({ src, alt }) => <img src={src} alt={alt} />;
+
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+};
+
+export default Image;
+```
+
+```notes
+It's a lot easier to make 1 component accessible than it is to make an entire website accessible.
+This helps curb the feeling that a11y is a daunting task that's too big to even start.
+```
+
+---
+
+export default WithHandle;
+
+<Heading size="xxl">Automate small accessibility errors</Heading>
+
+---
+
+export default WithHandle;
+
+<List useAppear>
+  <Text font="secondary" size="xxl" align="left">
+    ✅ ESLint (react/jsx-a11y)
+  </Text>
+  <Text font="secondary" size="xxl" align="left">
+    🚢 Lighthouse
+  </Text>
+  <Text font="secondary" size="xxl" align="left">
+    🔨 Axe / jest-axe
+  </Text>
+</List>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxxl">Thanks! 👏</Heading>

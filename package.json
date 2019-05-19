@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deck created with mdx-deck",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build -d dist/components-everyone-can-use deck.mdx",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-axe": "^3.1.0",
+    "mdx-deck": "^1.6.7",
+    "react-testing-library": "^5.4.4"
+  },
+  "name": "components-everyone-can-use",
+  "dependencies": {}
+}
