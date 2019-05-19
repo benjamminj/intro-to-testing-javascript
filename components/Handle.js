@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Text from './Text';
+import React from "react";
+import styled from "styled-components";
+import Text from "./Text";
 
 const HandleContainer = styled.div`
   display: flex;
@@ -14,14 +14,11 @@ const HandleContainer = styled.div`
 `;
 
 const Handle = ({ invert }) => {
-  const color = invert ? '#fff' : 'initial';
+  const color = invert ? "#fff" : "initial";
   return (
     <HandleContainer>
       <Text font="mono" size="sm" align="right" weight="bold" color={color}>
         @benjamminj
-      </Text>
-      <Text font="mono" size="sm" align="right" weight="bold" color={color}>
-        #vincitdevtalks
       </Text>
     </HandleContainer>
   );
