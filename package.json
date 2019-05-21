@@ -17,7 +17,7 @@
     "@babel/preset-env": "^7.3.0",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^23.6.0",
-    "jest": "^23.6.0",
+    "jest": "^23.0.0",
     "jest-axe": "^3.1.0",
     "mdx-deck": "^1.6.7",
     "react-testing-library": "^5.4.4"

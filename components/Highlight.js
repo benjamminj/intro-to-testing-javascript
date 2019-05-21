@@ -1,9 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const Background = styled.span`
   background-color: ${({ background }) => background};
+  margin: -0.5rem;
+  padding: 0.5rem;
   color: ${({ textColor }) => textColor};
   border-radius: ${({ radius }) => radius};
   font-weight: ${({ weight }) => weight};
@@ -17,13 +19,13 @@ Highlight.propTypes = {
   children: PropTypes.node.isRequired,
   background: PropTypes.string,
   textColor: PropTypes.string,
-  radius: PropTypes.string,
+  radius: PropTypes.string
 };
 
 Highlight.defaultProps = {
-  background: 'transparent',
-  textColor: 'inherit',
-  radius: '12px'
+  background: "transparent",
+  textColor: "inherit",
+  radius: "12px"
 };
 
-export default Highlight
+export default Highlight;
