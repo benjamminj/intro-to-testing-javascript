@@ -14,7 +14,7 @@ import { colors } from "./styles/variables";
 export { default as theme } from "./theme";
 
 <Head>
-  <title>Intro to Testing JavaScript</title>
+  <title>Intro to Testing in JavaScript</title>
   <link
     href="https://fonts.googleapis.com/css?family=Fredoka+One|Bowlby+One+SC|Inconsolata|Source+Sans+Pro"
     rel="stylesheet"
@@ -23,7 +23,7 @@ export { default as theme } from "./theme";
 
 <h1>
   <Text size="xxl" weight="bold">
-    Intro to Testing JavaScript
+    Intro to Testing in JavaScript
   </Text>
 </h1>
 
@@ -33,7 +33,35 @@ export { default as theme } from "./theme";
   </Text>
 </h2>
 
+### This is an h3
+
 <BigHandle />
+
+<div style={{ paddingTop: "10rem" }} />
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xl">About Me</Text>
+</h1>
+
+<Appear>
+  <h2>
+    <Text size="xl" align="left" display="block">
+      💻 Software Engineer at <Highlight background={colors.blue[100]}>SourceStrike</Highlight>
+    </Text>
+  </h2>
+
+  <h2>
+    <Text size="xl" align="left" display="block">
+      🎻 Formerly freelance musician
+    </Text>
+  </h2>
+</Appear>
+
+<div style={{ paddingTop: "5rem" }} />
 
 ---
 
@@ -233,7 +261,7 @@ export default WithHandle;
 export default WithHandle;
 
 <h1>
-  <Text size="xxl">
+  <Text size="xxl" align="left">
     Integration tests test the{" "}
     <Highlight background={colors.blue[100]}>integration</Highlight> of units
   </Text>

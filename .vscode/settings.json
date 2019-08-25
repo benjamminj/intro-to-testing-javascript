@@ -1,3 +1,8 @@
 {
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#9dbc18",
+    "statusBarItem.hoverBackground": "#778f12",
+    "statusBar.foreground": "#15202b"
+  }
 }

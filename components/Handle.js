@@ -9,7 +9,7 @@ const HandleContainer = styled.div`
   justify-content: center;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   padding: 1.5rem;
 `;
 
